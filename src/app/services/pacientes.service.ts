@@ -6,12 +6,12 @@ import { Injectable } from '@angular/core';
 })
 export class PacientesService {
 
-  URL = "Estoy en el servicio";
+  URL = 'http://localhost:8080/api-ginecologia/';
 
   constructor(private http: HttpClient) { }
 
-  altaPaciente(){
-    console.log(`${this.URL}`)
+  altaPaciente(paciente){
+    return this.http.post(`${this.URL}AltaPaciente.php`, JSON.stringify(paciente));
   }
 
 }
