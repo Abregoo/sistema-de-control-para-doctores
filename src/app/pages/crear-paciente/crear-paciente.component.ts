@@ -9,16 +9,13 @@ import { PacientesService } from "../../services/pacientes.service";
 export class CrearPacienteComponent {
   pacientes = {};
 
-  constructor(private pacienteServices: PacientesService) {}
+  constructor(private pacientesServices: PacientesService) {}
 
   AltaPaciente() {
-
-    console.log(this.pacientes);
-
-    // this.pacienteServices.altaPaciente(this.pacientes).subscribe((resp) => {
-    //   if (resp["resultado"] == "OK") {
-    //     console.log("Registro Exitoso");
-    //   }
-    // });
+    this.pacientesServices.altaPaciente(this.pacientes).subscribe(resp => {
+      if ((resp["resultado"] = "OK")) {
+        console.log("Resgistro exitoso");
+      }
+    });
   }
 }

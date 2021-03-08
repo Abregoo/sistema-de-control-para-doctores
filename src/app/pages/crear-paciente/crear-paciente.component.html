@@ -29,14 +29,14 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="control-label">Nombre completo</label>
-                                            <input type="text" class="form-control" name="pacientes" [(ngModel)]="pacientes"  placeholder="Daniel Ortega">
+                                            <input type="text" class="form-control" name="pacientes.nom_paciente" [(ngModel)]="pacientes.nom_paciente"  placeholder="Daniel Ortega">
                                         </div>
                                     </div>
                                     <!--/span-->
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="control-label">Edad</label>
-                                            <input type="text" class="form-control"  placeholder="31 años">
+                                            <input type="text" class="form-control"  name="pacientes.edad_paciente" [(ngModel)]="pacientes.edad_paciente" placeholder="31 años">
                                         </div>
                                     </div>
                                     <!--/span-->
@@ -46,14 +46,14 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Teléfono</label>
-                                            <input type="text"  class="form-control"  placeholder="(999) 999-9999">
+                                            <input type="text"  class="form-control"  name="pacientes.tel_paciente" [(ngModel)]="pacientes.tel_paciente" placeholder="(505) 8696-4568">
                                         </div>
                                     </div>
                                     <!--/span-->
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="control-label">Dirección</label>
-                                            <input type="text" class="form-control"  placeholder="Av. Venustiano carranza 43, Atlacomulco, Edo. De Méx.">
+                                            <input type="text" class="form-control"  name="pacientes.dir_paciente" [(ngModel)]="pacientes.dir_paciente"  placeholder="Av. Venustiano carranza 43, Atlacomulco, Edo. De Méx.">
                                         </div>
                                     </div>
                                     <!--/span-->
