@@ -6,5 +6,12 @@ import { Injectable } from '@angular/core';
 })
 export class PacientesService {
 
+  URL = "Estoy en el servicio";
+
   constructor(private http: HttpClient) { }
+
+  altaPaciente(){
+    console.log(`${this.URL}`)
+  }
+
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PacientesService } from '../../services/pacientes.service';
 
 @Component({
   selector: 'app-crear-paciente',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CrearPacienteComponent implements OnInit {
 
-  constructor() { }
+  constructor(private pacienteServices: PacientesService){
+    this.pacienteServices.altaPaciente();
+  }
 
   ngOnInit(): void {
   }
