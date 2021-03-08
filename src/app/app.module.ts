@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './pages/header/header.component';
@@ -9,6 +11,7 @@ import { DatosPacienteComponent } from './pages/datos-paciente/datos-paciente.co
 import { NuevoHistorialComponent } from './pages/nuevo-historial/nuevo-historial.component';
 import { HistorialPacienteComponent } from './pages/historial-paciente/historial-paciente.component';
 import { ExpedienteComponent } from './pages/expediente/expediente.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,8 @@ import { ExpedienteComponent } from './pages/expediente/expediente.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
