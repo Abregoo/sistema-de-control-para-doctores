@@ -29,7 +29,7 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="control-label">Nombre completo</label>
-                                            <input type="text" class="form-control"  placeholder="John doe">
+                                            <input type="text" class="form-control" name="pacientes" [(ngModel)]="pacientes"  placeholder="Daniel Ortega">
                                         </div>
                                     </div>
                                     <!--/span-->
@@ -61,7 +61,7 @@
                                 <!--/row-->                                        
                             </div>
                             <div class="form-actions">
-                                <button  class="btn btn-success"> <i class="fa fa-check"></i> Guardar </button> 
+                                <button  class="btn btn-success" (click)="AltaPaciente();"> <i class="fa fa-check"></i> Guardar </button> 
                             </div>
                     </div>
                 </div>

@@ -7,15 +7,18 @@ import { PacientesService } from "../../services/pacientes.service";
   styleUrls: ["./crear-paciente.component.css"],
 })
 export class CrearPacienteComponent {
-  paciente = {};
+  pacientes = {};
 
   constructor(private pacienteServices: PacientesService) {}
 
   AltaPaciente() {
-    this.pacienteServices.altaPaciente(this.paciente).subscribe((resp) => {
-      if (resp["resultado"] == "OK") {
-        console.log("Registro Exitoso");
-      }
-    });
+
+    console.log(this.pacientes);
+
+    // this.pacienteServices.altaPaciente(this.pacientes).subscribe((resp) => {
+    //   if (resp["resultado"] == "OK") {
+    //     console.log("Registro Exitoso");
+    //   }
+    // });
   }
 }
