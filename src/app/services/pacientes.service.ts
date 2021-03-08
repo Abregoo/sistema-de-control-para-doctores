@@ -10,8 +10,8 @@ export class PacientesService {
 
   constructor(private http: HttpClient) { }
 
-  altaPaciente(paciente){
-    return this.http.post(`${this.URL}AltaPaciente.php`, JSON.stringify(paciente));
+  altaPaciente(pacientes){
+    return this.http.post(`${this.URL}AltaPaciente.php`, JSON.stringify(pacientes));
   }
 
 }

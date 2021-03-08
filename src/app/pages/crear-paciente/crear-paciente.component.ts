@@ -7,7 +7,7 @@ import { PacientesService } from "../../services/pacientes.service";
   styleUrls: ["./crear-paciente.component.css"],
 })
 export class CrearPacienteComponent {
-  pacientes = {};
+  pacientes: any = {};
 
   constructor(private pacientesServices: PacientesService) {}
 
